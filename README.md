@@ -27,7 +27,7 @@ cd ML-Agents-PPO-Target-Navigation
 
 Open the Unity project located in this repository. After cloning, you can directly use the provided Unity project as your working environment.
 
-1. Open Unity Hub and select the `ml-agents-ppo-target-navigation` project.
+1. Open Unity Hub and select the `ML-Agents-PPO-Target-Navigation` project.
 2. Ensure that ML-Agents is set up correctly in Unity.
 3. The project was developed using **Unity Editor version 2021.3.22f1**. Make sure you are using this version or a compatible one to avoid issues.
 4. The training environment is set up in a 2D scene provided within the project.
@@ -46,7 +46,7 @@ Activate the virtual environment:
 
 - On Windows:
   ```bash
-  venv\Scripts\activate`
+  venv\Scripts\activate
   ```
   
 - On macOS/Linux:
@@ -67,25 +67,35 @@ Once `pip` is upgraded, install the required dependencies by running the followi
 
 1. Install ML-Agents:
   
-   `pip install mlagents`
+  ```bash
+  pip install mlagents
+  ```
 
 2. Install PyTorch (and its associated libraries):
-  
-   `pip install torch torchvision torchaudio`
+    
+  ```bash
+  pip install torch torchvision torchaudio
+  ```
 
 3. Install the specific version of protobuf to avoid conflicts:
-
-   `pip install protobuf==3.20.3`
+  
+  ```bash
+  pip install protobuf==3.20.3
+  ```
 
 ### 7. Verify ML-Agents installation
 
 To confirm that ML-Agents has been installed correctly, run the following command to check the available options:
 
-`mlagents-learn -h`
+```bash
+mlagents-learn -h
+```
 
 or 
 
-`mlagents-learn --help`
+```bash
+mlagents-learn --help
+```
 
 This should display a list of available commands and options for ML-Agents.
 
@@ -93,7 +103,9 @@ This should display a list of available commands and options for ML-Agents.
 
 After verifying the installation, you can start the training process. Run the following command to initialize training:
 
-`mlagents-learn --run-id=Test1`
+```bash
+mlagents-learn --run-id=Test1
+```
 
 When the terminal prompts you to start the Unity environment, go to Unity and press the **Play** button in the Unity Editor. The agent will begin training in the scene, and you can observe its progress in real-time.
 
