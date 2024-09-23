@@ -2,7 +2,7 @@
 
 This repository contains a Unity ML-Agents project where an agent is trained using **Proximal Policy Optimization (PPO)** to autonomously navigate to a target point in a 2D environment. The training process is done using Unity's ML-Agents toolkit.
 
-![Training Instance](path_to_your_gif.gif)
+![Training Instance](Media/demo_gif.gif)
 
 ## Features
 
@@ -140,6 +140,6 @@ Inside the `results/Test1` folder, you will find:
 - The saved **ONNX** model file, which you can use to deploy the agent.
 - Logs for the training process, which can be used to analyze or continue training.
 
-Here’s an example of what the results folder structure might look like:
+Here’s an example of what the results look like in tensorboard:
 
-![Results Folder Example](path_to_your_image.png)
+![Results Folder Example](Media/tensorboard.png)
