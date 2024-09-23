@@ -6,16 +6,15 @@ The purpose of this repository is to provide a **tutorial** on how to get starte
 
 ![Training Instance](Media/demo_gif.gif)
 
+## Overview
+
+The agent's goal in this project is to navigate a 2D environment and reach a target while avoiding walls. The agent is represented as a **pink square**, and the target is a **yellow circle**. The agent receives rewards for reaching the target and penalties for colliding with walls. Additionally, the **background changes color** based on the agent's performance: it turns **green** when the agent successfully reaches the target and **red** if it collides with a wall. The environment is randomized at the start of each training episode to improve the agent's ability to generalize.
+
 ## Features
 
 - **ML-Agents**: Implements Unity's ML-Agents toolkit for agent-based learning.
 - **PPO Algorithm**: Proximal Policy Optimization (PPO) is used to train the agent.
 - **Target Navigation**: The agent learns to navigate to a specified target point.
-
-## Overview
-
-The agent's goal in this project is to navigate a 2D environment and reach a target while avoiding walls. The agent is represented as a **pink square**, and the target is a **yellow circle**. The agent receives rewards for reaching the target and penalties for colliding with walls. Additionally, the **background changes color** based on the agent's performance: it turns **green** when the agent successfully reaches the target and **red** if it collides with a wall. The environment is randomized at the start of each training episode to improve the agent's ability to generalize.
-
 
 ### Proximal Policy Optimization (PPO)
 
