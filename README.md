@@ -19,8 +19,8 @@ Make sure you have Python 3.9.13 installed. You can download it from [here](http
 ### 2. Clone the repository
 
 ```bash
-git clone [https://github.com/your-username/ml-agents-ppo-target-navigation.git](https://github.com/mburaozkan/ML-Agents-PPO-Target-Navigation.git)
-cd ml-agents-ppo-target-navigation
+git clone https://github.com/mburaozkan/ML-Agents-PPO-Target-Navigation.git
+cd ML-Agents-PPO-Target-Navigation
 ```
 
 ### 3. Set up Unity project
