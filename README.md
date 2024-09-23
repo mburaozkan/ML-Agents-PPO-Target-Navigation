@@ -111,8 +111,35 @@ When the terminal prompts you to start the Unity environment, go to Unity and pr
 
 Training results, including the trained model, will be saved in a `results/Test1` folder.
 
-### Results
+### 9. Results
 
-Below is a demo GIF of the training process:
+After the training is complete, you can view the training progress and metrics using **TensorBoard**. Follow these steps to open TensorBoard and analyze the results:
 
-![Training Demo](path_to_your_gif.gif)
+#### Step 1: Install TensorBoard
+If you don’t have TensorBoard installed, run:
+
+
+```bash
+pip install tensorboard
+```
+
+#### Step 2: Open TensorBoard
+Navigate to the folder where the results were saved. This will be in the `results/Test1` folder. To open TensorBoard and monitor the training, use the following command:
+
+```bash
+tensorboard --logdir=results/Test1
+```
+
+This will start a local server where you can visualize the training progress. Open a browser and go to the address displayed in the terminal (typically `http://localhost:6006`).
+
+#### Step 3: View the Metrics
+TensorBoard will display various metrics, such as rewards, losses, and episode lengths. You can use these graphs to evaluate how well the agent is learning over time.
+
+#### Step 4: Access the Results Folder
+Inside the `results/Test1` folder, you will find:
+- The saved **ONNX** model file, which you can use to deploy the agent.
+- Logs for the training process, which can be used to analyze or continue training.
+
+Here’s an example of what the results folder structure might look like:
+
+![Results Folder Example](path_to_your_image.png)
