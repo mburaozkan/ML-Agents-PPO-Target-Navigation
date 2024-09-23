@@ -12,6 +12,16 @@ The purpose of this repository is to provide a **tutorial** on how to get starte
 - **PPO Algorithm**: Proximal Policy Optimization (PPO) is used to train the agent.
 - **Target Navigation**: The agent learns to navigate to a specified target point.
 
+## Overview
+
+The agent's goal in this project is to navigate a 2D environment and reach a target while avoiding walls. The agent is represented as a **pink square**, and the target is a **yellow circle**. The agent receives rewards for reaching the target and penalties for colliding with walls. Additionally, the **background changes color** based on the agent's performance: it turns **green** when the agent successfully reaches the target and **red** if it collides with a wall. The environment is randomized at the start of each training episode to improve the agent's ability to generalize.
+
+
+### Proximal Policy Optimization (PPO)
+
+PPO is a reinforcement learning algorithm that adjusts the agent's actions by optimizing a policy, ensuring that the changes to the policy are not too large between updates. It is a popular choice for training agents in Unity ML-Agents because of its stability and efficiency in solving complex tasks.
+
+
 ## Installation
 
 ### 1. Install Python 3.9.13
@@ -113,6 +123,15 @@ When the terminal prompts you to start the Unity environment, go to Unity and pr
 
 Training results, including the trained model, will be saved in a `results/Test1` folder.
 
+
+Also if you want to continue training from a previously saved checkpoint, you can use the following command:
+
+```bash
+mlagents-learn --run-id=Test1 --resume
+```
+
+This will resume the training from the last checkpoint saved in the `results/Test1` folder.
+
 ### 9. Results
 
 After the training is complete, you can view the training progress and metrics using **TensorBoard**. Follow these steps to open TensorBoard and analyze the results:
@@ -145,3 +164,10 @@ Inside the `results/Test1` folder, you will find:
 Here’s an example of what the results look like in tensorboard:
 
 ![Results Folder Example](Media/tensorboard.png)
+
+#### Key Metrics in TensorBoard
+
+- **Reward**: Shows the reward the agent receives per episode. Higher rewards indicate better performance.
+- **Cumulative Reward**: The total reward accumulated over time, showing overall agent performance improvement.
+- **Loss**: The loss metric helps monitor how well the training is progressing. Lower values generally indicate better performance.
+
