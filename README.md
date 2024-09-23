@@ -2,6 +2,8 @@
 
 This repository contains a Unity ML-Agents project where an agent is trained using **Proximal Policy Optimization (PPO)** to autonomously navigate to a target point in a 2D environment. The training process is done using Unity's ML-Agents toolkit.
 
+The purpose of this repository is to provide a **tutorial** on how to get started with Unity's **ML-Agents** library. It includes a step-by-step guide and an example project, demonstrating the process of setting up an environment, training an agent using the PPO algorithm, and understanding key aspects of ML-Agents.
+
 ![Training Instance](Media/demo_gif.gif)
 
 ## Features
@@ -20,14 +22,14 @@ Make sure you have Python 3.9.13 installed. You can download it from [here](http
 
 ```bash
 git clone https://github.com/mburaozkan/ML-Agents-PPO-Target-Navigation.git
-cd ML-Agents-PPO-Target-Navigation
+cd ML-Agents-PPO-Target-Navigation\Target-Navigation-Agent
 ```
 
 ### 3. Set up Unity project
 
 Open the Unity project located in this repository. After cloning, you can directly use the provided Unity project as your working environment.
 
-1. Open Unity Hub and select the `ML-Agents-PPO-Target-Navigation` project.
+1. Open Unity Hub and select the `Target-Navigation-Agent` project.
 2. Ensure that ML-Agents is set up correctly in Unity.
 3. The project was developed using **Unity Editor version 2021.3.22f1**. Make sure you are using this version or a compatible one to avoid issues.
 4. The training environment is set up in a 2D scene provided within the project.
